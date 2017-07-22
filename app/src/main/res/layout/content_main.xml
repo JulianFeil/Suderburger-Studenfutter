@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.power.myfirstapp.MainActivity"
+    tools:showIn="@layout/activity_main"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:layout_width="463dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="116dp"
+        android:text="Studentenfutter"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_width="match_parent"
+        tools:textAlignment="center"
+        tools:layout_editor_absoluteX="-52dp" />
+
+    <Button
+        android:id="@+id/startbtn"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="171dp"
+        android:background="@android:color/holo_red_light"
+        android:text="Anmelden"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/passwordtxt"
+        app:layout_constraintRight_toRightOf="@+id/passwordtxt"
+        tools:background="@android:color/holo_red_light"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/Usernametxt"
+        android:layout_width="271dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:ems="10"
+        android:hint="Benutzername"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/passwordtxt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <EditText
+        android:id="@+id/passwordtxt"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:hint="Passwort"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/startbtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/Usernametxt"
+        app:layout_constraintRight_toRightOf="@+id/Usernametxt"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
